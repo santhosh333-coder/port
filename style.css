@@ -1,0 +1,482 @@
+/* Reset & base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #f4f7fc;
+  color: #333;
+  line-height: 1.6;
+  font-size: 16px;
+  min-height: 100vh;
+}
+
+/* Header */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #000;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 0.15);
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 1.4rem;
+  letter-spacing: 2px;
+}
+
+.toggle-btn {
+  font-size: 1.8rem;
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  display: none;
+  user-select: none;
+}
+
+/* Hero */
+.hero {
+  max-width: 900px;
+  margin: 120px auto 60px;
+  background: #fff;
+  padding: 40px 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgb(0 0 0 / 0.1);
+  text-align: center;
+}
+
+.profile-img {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  border: 4px solid #000;
+  box-shadow: 0 4px 10px rgb(0 74 173 / 0.3);
+}
+
+.hero h1 {
+  font-size: 2.6rem;
+  color: #000;
+  margin-bottom: 8px;
+}
+
+.hero h2 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  color: #555;
+  margin: 5px 0;
+  font-weight: 500;
+}
+
+/* Marquee (scroll text) */
+.scroll-text {
+  background: #000;
+  color: #fff;
+  padding: 10px 0;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  font-size: 1rem;
+  user-select: none;
+}
+
+/* Sections */
+section {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px 30px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgb(0 0 0 / 0.05);
+}
+
+section h3 {
+  margin-bottom: 20px;
+  color: #000;
+  font-weight: 700;
+  font-size: 1.8rem;
+  border-bottom: 3px solid #000;
+  display: inline-block;
+  padding-bottom: 6px;
+}
+
+/* Lists */
+ul {
+  list-style: inside disc;
+  color: #444;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+ul li {
+  margin-bottom: 8px;
+}
+
+/* Client logos */
+.client-logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 15px;
+}
+
+.client {
+  flex: 1 1 140px;
+  background: #e1e7f5;
+  color: #000;
+  font-weight: 600;
+  text-align: center;
+  padding: 15px 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgb(0 74 173 / 0.15);
+  user-select: none;
+  transition: background 0.3s ease;
+}
+
+.client:hover {
+  background: #000;
+  color: #fff;
+  cursor: default;
+}
+
+/* Gallery */
+.gallery-container {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gallery-container img {
+  max-width: 280px;
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgb(0 0 0 / 0.1);
+  transition: transform 0.3s ease;
+  cursor: zoom-in;
+}
+
+.gallery-container img:hover {
+  transform: scale(1.05);
+}
+
+/* Testimonials */
+.testimonials blockquote {
+  font-style: italic;
+  border-left: 4px solid #000;
+  margin: 20px 0;
+  padding-left: 18px;
+  color: #333;
+  font-size: 1.1rem;
+  user-select: none;
+}
+
+/* FAQ */
+.faq ul li {
+  margin-bottom: 15px;
+  font-weight: 500;
+  color: #444;
+}
+
+.faq ul li strong {
+  color: #000;
+}
+
+/* Call To Action */
+.cta {
+  text-align: center;
+  background: #000;
+  color: #fff;
+  padding: 40px 30px;
+  border-radius: 10px;
+  box-shadow: 0 6px 25px rgb(0 74 173 / 0.3);
+}
+
+.cta h3 {
+  font-size: 2rem;
+  margin-bottom: 12px;
+  font-weight: 700;
+}
+
+.cta p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+.cta-btn {
+  background: #fff;
+  color: #000;
+  text-decoration: none;
+  font-weight: 700;
+  padding: 12px 28px;
+  border-radius: 40px;
+  box-shadow: 0 4px 10px rgb(0 74 173 / 0.3);
+  transition: background-color 0.3s ease, color 0.3s ease;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.cta-btn:hover {
+  background: #fff;
+  color: #fff;
+}
+
+/* Footer */
+footer {
+  background: #ccc;
+  color: #222;
+  text-align: center;
+  padding: 20px 10px;
+  font-size: 0.9rem;
+  user-select: none;
+}
+
+/* Fade-in animations */
+.fade-in {
+  opacity: 0;
+  transform: translateY(25px);
+  transition: opacity 0.9s ease-out, transform 0.9s ease-out;
+}
+
+.fade-in.appear {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  header {
+    padding: 12px 20px;
+  }
+
+  .toggle-btn {
+    display: block;
+  }
+
+  header.open .logo {
+    display: none;
+  }
+
+  .hero,
+  section {
+    margin: 100px 15px 40px;
+    padding: 25px 20px;
+  }
+
+  .gallery-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .client-logos {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+/* Scroll to top button */
+#scrollTopBtn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background: #000;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  padding: 12px 16px;
+  font-size: 1.4rem;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgb(0 74 173 / 0.4);
+  display: none;
+  z-index: 1500;
+  user-select: none;
+  transition: background-color 0.3s ease;
+}
+
+#scrollTopBtn:hover {
+  background-color: #003381;
+}
+
+.testimonials {
+  max-width: 700px;
+  margin: 40px auto;
+  background: #e8f0fe;
+  padding: 30px 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 18px rgb(0 0 0 / 0.1);
+  position: relative;
+  user-select: none;
+  font-style: normal;
+}
+
+.testimonials h3 {
+  color: #000;
+  margin-bottom: 25px;
+  font-weight: 700;
+  font-size: 1.9rem;
+  border-bottom: 3px solid #000;
+  display: inline-block;
+  padding-bottom: 6px;
+}
+
+.testimonial-slider {
+  position: relative;
+  overflow: hidden;
+}
+
+.testimonial-slider blockquote {
+  display: none;
+  font-style: italic;
+  color: #222;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  padding: 0 20px;
+  transition: opacity 0.6s ease;
+  min-height: 110px;
+}
+
+.testimonial-slider blockquote.appear {
+  display: block;
+}
+
+.testimonial-slider strong {
+  color: #000;
+  font-weight: 700;
+  margin-left: 5px;
+}
+
+/* Navigation buttons */
+.testimonial-controls {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.testimonial-controls button {
+  background: #000;
+  border: none;
+  color: white;
+  font-size: 1.6rem;
+  padding: 6px 14px;
+  margin: 0 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  user-select: none;
+}
+
+.testimonial-controls button:hover {
+  background-color: #fff;
+}
+
+/* Responsive tweaks */
+@media (max-width: 480px) {
+  .testimonials {
+    padding: 20px 15px;
+  }
+
+  .testimonial-slider blockquote {
+    font-size: 1rem;
+    min-height: auto;
+  }
+}
+
+h3 span {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+h3 span:hover {
+  transform: scale(1.1) rotate(5deg);
+  color: rgb(#000, #000, #fff);
+}
+
+/* .logo {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+} */
+
+.logo span {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #003366;
+}
+
+.reach-us i {
+  color: #007bff;
+  margin-right: 10px;
+}
+
+.reach-us a {
+  color: #003366;
+  text-decoration: none;
+}
+
+.reach-us a:hover {
+  text-decoration: underline;
+}
+
+
+/* Header styling (optional base) */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: #f5f5f5;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Logo styling */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  height: 50px;       /* controls the logo size */
+  width: auto;        /* keeps aspect ratio */
+  object-fit: contain;
+}
+
+.logo span {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #000;
+}
+
+/* Toggle button (optional styling) */
+.toggle-btn {
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #003366;
+}
+
+.reach-us i {
+  color: #000000;  /* Black color */
+  margin-right: 8px; /* Space between icon and text */
+}
+
+
